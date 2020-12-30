@@ -48,7 +48,7 @@ namespace XYZClicker
             // 
             this.btnStart.Location = new System.Drawing.Point(12, 123);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(126, 23);
+            this.btnStart.Size = new System.Drawing.Size(124, 23);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@ namespace XYZClicker
             0,
             0});
             this.numClicks.Name = "numClicks";
-            this.numClicks.Size = new System.Drawing.Size(56, 20);
+            this.numClicks.Size = new System.Drawing.Size(54, 20);
             this.numClicks.TabIndex = 0;
-            this.numClicks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numClicks.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numClicks.Value = new decimal(new int[] {
             1,
             0,
@@ -91,9 +91,9 @@ namespace XYZClicker
             0,
             0});
             this.numDelay.Name = "numDelay";
-            this.numDelay.Size = new System.Drawing.Size(56, 20);
+            this.numDelay.Size = new System.Drawing.Size(54, 20);
             this.numDelay.TabIndex = 2;
-            this.numDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numDelay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numDelay.Value = new decimal(new int[] {
             3,
             0,
@@ -132,15 +132,20 @@ namespace XYZClicker
             // numInterval
             // 
             this.numInterval.Location = new System.Drawing.Point(82, 38);
+            this.numInterval.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numInterval.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             0});
             this.numInterval.Name = "numInterval";
-            this.numInterval.Size = new System.Drawing.Size(56, 20);
+            this.numInterval.Size = new System.Drawing.Size(54, 20);
             this.numInterval.TabIndex = 1;
-            this.numInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numInterval.Value = new decimal(new int[] {
             100,
             0,
@@ -151,7 +156,7 @@ namespace XYZClicker
             // 
             this.btnStop.Location = new System.Drawing.Point(12, 123);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(126, 23);
+            this.btnStop.Size = new System.Drawing.Size(124, 23);
             this.btnStop.TabIndex = 7;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -163,7 +168,7 @@ namespace XYZClicker
             this.lblInfo.ForeColor = System.Drawing.Color.Red;
             this.lblInfo.Location = new System.Drawing.Point(12, 87);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(126, 33);
+            this.lblInfo.Size = new System.Drawing.Size(124, 33);
             this.lblInfo.TabIndex = 8;
             this.lblInfo.Text = "Press ESC to cancel";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,7 +177,7 @@ namespace XYZClicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(150, 160);
+            this.ClientSize = new System.Drawing.Size(149, 160);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.numInterval);
             this.Controls.Add(this.label1);
@@ -187,7 +192,6 @@ namespace XYZClicker
             this.KeyPreview = true;
             this.Name = "frmClickerMain";
             this.Text = "XYZ Clicker";
-            this.Load += new System.EventHandler(this.frmClickerMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numClicks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInterval)).EndInit();
